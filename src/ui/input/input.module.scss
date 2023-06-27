@@ -1,0 +1,26 @@
+@import '../../styles/mixins/text';
+@import '../../styles/colors';
+
+.label {
+  @include text(14px, 20px, 400);
+}
+
+.input {
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  width: 360px;
+  border-radius: 8px;
+  border: 1px solid $border-default;
+  transition: border ease-in-out 0.25s;
+  @include text(14px, 20px, 400);
+  color: $text-primary;
+
+  &:focus,
+  &:active,
+  &:focus-visible {
+    border: 1px solid $orange !important;
+    outline: none;
+  }
+}

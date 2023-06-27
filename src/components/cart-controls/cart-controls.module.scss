@@ -1,0 +1,27 @@
+@import '../../styles/colors';
+@import '../../styles/mixins/text';
+
+.controls {
+  display: flex;
+  gap: 8px;
+  margin: 0 0 0 auto;
+  color: $text-primary;
+  @include text(20px, 20px, 600);
+}
+
+.modalWrapper {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  width: 100%;
+}
+
+.modalDescription {
+  @include text(16px, 20px, 400);
+}
+
+.modalControls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}

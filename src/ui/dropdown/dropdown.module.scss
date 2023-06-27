@@ -1,0 +1,58 @@
+@import '../../styles/mixins/text';
+@import '../../styles/colors';
+
+.label {
+  @include text(14px, 20px, 400);
+}
+
+.select {
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  width: 360px;
+  border-radius: 8px;
+  border: 1px solid $border-default;
+  transition: border ease-in-out 0.25s;
+  @include text(14px, 20px, 400);
+  color: $text-primary;
+  cursor: pointer;
+
+  &_active {
+    border: 1px solid $orange !important;
+  }
+}
+
+.icon {
+  transition: transform ease-in-out 0.25s;
+  display: flex;
+  align-items: center;
+  color: $icon-default;
+}
+
+.iconActive {
+  transform: rotate(180deg);
+}
+
+.list {
+  position: absolute;
+  width: 360px;
+  z-index: 5;
+  list-style: none;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid $border-default;
+
+  li {
+    cursor: pointer;
+    padding: 12px;
+    @include text(14px, 20px, 400);
+    background-color: inherit;
+    transition: background-color ease-in-out 0.25s;
+
+    &:hover {
+      background-color: $lightest-gray;
+    }
+  }
+}

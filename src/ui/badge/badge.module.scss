@@ -1,0 +1,13 @@
+@import '../../styles/colors';
+@import '../../styles/mixins/text';
+
+.badge {
+  display: flex;
+  width: 28px;
+  height: 28px;
+  background-color: $orange;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  @include text(14px, 20px, 600);
+}

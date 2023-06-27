@@ -1,0 +1,50 @@
+@import '../../styles/colors';
+@import '../../styles/mixins/text';
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  height: min-content;
+  min-height: 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color ease-in-out 0.25s, border ease-in-out 0.25s;
+  @include text(14px, 20px, 500);
+
+  &_primary {
+    color: $white;
+    background-color: $orange;
+
+    &:hover {
+      background-color: $dark-orange;
+    }
+  }
+
+  &_secondary {
+    color: $orange;
+    background-color: transparent;
+    border: $orange 1px solid;
+
+    &:hover {
+      border-color: $dark-orange;
+    }
+  }
+
+  &_disabled {
+    color: $white;
+    background-color: $light-orange;
+    cursor: not-allowed;
+  }
+
+  &_transparent {
+    color: $text-primary;
+    background-color: transparent;
+  }
+
+  &__with-icon {
+    padding: 4px;
+    border-radius: 4px;
+  }
+}

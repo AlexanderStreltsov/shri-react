@@ -1,0 +1,19 @@
+@import '../styles/colors';
+
+.layout {
+  max-width: 1920px;
+  min-height: 100vh;
+  display: grid;
+  background-color: $lightest-gray;
+  grid-template-rows: min-content auto min-content;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}
+
+.main {
+  margin: 32px 24px;
+  display: flex;
+}

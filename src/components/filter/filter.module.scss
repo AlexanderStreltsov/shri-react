@@ -1,0 +1,26 @@
+@import '../../styles/colors';
+@import '../../styles/mixins/text';
+
+.filter {
+  padding: 24px;
+  background-color: $white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: $text-primary;
+  min-height: calc(100vh - 215px);
+  max-height: calc(100vh - 215px);
+  position: sticky;
+  top: 112px;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title {
+  @include text(16px, 20px, 600);
+}

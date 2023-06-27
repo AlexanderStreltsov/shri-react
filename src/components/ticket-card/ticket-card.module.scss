@@ -1,0 +1,44 @@
+@import '../../styles/colors';
+@import '../../styles/mixins/text';
+
+.wrapper {
+  display: flex;
+  padding: 24px;
+  gap: 24px;
+  border-radius: 8px;
+  background-color: $white;
+  color: $text-primary;
+}
+
+.poster {
+  width: 100px;
+  height: 120px;
+  border-radius: 8px;
+
+  figure {
+    position: relative;
+    border-radius: inherit;
+    width: inherit;
+    height: inherit;
+  }
+
+  img {
+    object-fit: cover;
+    border-radius: inherit;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.title {
+  @include text(20px, 20px, 600);
+}
+
+.genre {
+  @include text(16px, 20px, 400);
+  font-style: italic;
+}

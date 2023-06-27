@@ -1,0 +1,16 @@
+@import '../../styles/colors';
+@import '../../styles/mixins/text';
+
+.footer {
+  background-color: $gray;
+  padding: 24px 32px;
+  color: $white;
+  @include text(20px, 20px, 400);
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
