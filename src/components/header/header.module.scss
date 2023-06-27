@@ -1,0 +1,29 @@
+@import '../../styles/colors';
+@import '../../styles/mixins/text';
+
+.header {
+  background-color: $gray;
+  padding: 24px 32px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  color: $white;
+  @include text(32px, 32px, 700);
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header li a {
+  display: flex;
+}
+
+.cart {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}

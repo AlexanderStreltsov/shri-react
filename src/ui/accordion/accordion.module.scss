@@ -1,0 +1,40 @@
+@import '../../styles/colors';
+@import '../../styles/mixins/text';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  border-radius: 8px;
+  background-color: $white;
+  color: $text-primary;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.title {
+  @include text(24px, 32px, 600);
+}
+
+.icon {
+  transition: transform ease-in-out 0.25s;
+}
+
+.iconActive {
+  transform: rotate(180deg);
+}
+
+.content {
+  transition: height ease-in-out 0.25s;
+  overflow: hidden;
+}
+
+.text {
+  margin-top: 16px;
+}
